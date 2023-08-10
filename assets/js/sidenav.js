@@ -8,7 +8,7 @@
  */
 + function ($) {
     'use strict'
-
+    console.log("SIDEPANEL")
     var DataKey = 'Masteradmin.tree'
 
     var Default = {
@@ -73,7 +73,7 @@
 
     Tree.prototype.expand = function (tree, parent) {
         var expandedEvent = $.Event(Event.expanded)
-
+        console.log("MANISH")
         if (this.options.accordion) {
             var openMenuLi = parent.siblings(Selector.open)
             var openTree = openMenuLi.children(Selector.treeviewMenu)

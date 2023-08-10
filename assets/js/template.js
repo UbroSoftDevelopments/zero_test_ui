@@ -221,6 +221,7 @@ if (typeof jQuery === 'undefined') {
       layoutFixed: '.fixed',
       menu: '.sidebar-menu.tree li:not(.treeview) a'
     }
+    console.log("SIDEMENU",Selector)
 
     var ClassName = {
       collapsed: 'sidebar-collapse',
@@ -248,7 +249,7 @@ if (typeof jQuery === 'undefined') {
       //      this.expandOnHover()
       //      $('body').addClass(ClassName.expandFeature)
       //    }
-
+      console.log("MANISH")
       $(Selector.contentWrapper).on(function () {
         // Enable hide menu when clicking on the content-wrapper on small screens
         if ($(window).width() <= this.options.collapseScreenSize && $('body').hasClass(ClassName.open)) {
@@ -356,8 +357,13 @@ if (typeof jQuery === 'undefined') {
 
     // Data API
     $(document).on('click', Selector.button, function (e) {
+      console.log("MANISH")
       e.preventDefault()
-      Plugin.call($(this), 'toggle')
+      if(localStorage.getItem("menuCalled" == 'true')){
+        Plugin.call($(this), 'toggle')
+      }
+     
+      
     })
     $(window).on('load', function () {
       Plugin.call($(Selector.button))
@@ -365,9 +371,11 @@ if (typeof jQuery === 'undefined') {
 
     if (jQuery(window).width() <= 767) {
       $(document).on('click', Selector.contentWrapper, function (e) {
+        console.log("MANISH")
         Plugin.call($(this), 'remove')
       })
       $(document).on('click', Selector.menu, function (e) {
+        console.log("MANISH")
         Plugin.call($(this), 'remove')
       })
     }
