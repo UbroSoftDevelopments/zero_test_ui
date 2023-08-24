@@ -28179,7 +28179,7 @@ Height property
    height: 100vh;
    z-index: 999999;
    overflow: visible;
-   background: #fff url("../img/loader.gif") no-repeat center center;
+   background: #fff url("../img/loaderv1.gif") no-repeat center center;
  }
 
  /*sidebar*/

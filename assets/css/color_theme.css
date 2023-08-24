@@ -1354,15 +1354,15 @@ Theme Primary Color
   .theme-primary .box.box-solid.box-primary > .box-header > a {
     color: #ffffff; }
 .theme-primary .box-info {
-  background-color: #00baff !important; }
+  background-color: var(--themeBlue) !important; }
   .theme-primary .box-info.box-bordered {
-    border-color: #00baff; }
+    border-color: var(--themeBlue); }
 .theme-primary .box-outline-info {
   background-color: #ffffff;
-  border: 1px solid #00baff; }
+  border: 1px solid var(--themeBlue); }
 .theme-primary .box.box-solid.box-info > .box-header {
   color: #ffffff;
-  background-color: #00baff; }
+  background-color: var(--themeBlue); }
   .theme-primary .box.box-solid.box-info > .box-header .btn {
     color: #ffffff; }
   .theme-primary .box.box-solid.box-info > .box-header > a {
